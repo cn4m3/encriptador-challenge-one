@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
+
+body{
+    background-color: #f3f5fc;
+    box-sizing: border-box;
+}
+
+.logo{
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+}
+
+.logo img{
+    width: 10%;
+}
+
+.flex-izquierda{
+    width: 100%;
+}
+
+.flex-derecha{
+    width: 100%;
+    height: auto;
+}
+
+.principal{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.textArea{
+    color: #0a3871;
+    background-color: #f3f5fc;
+    border: none;
+    outline: none;
+    font-family: "Mohave", sans-serif;
+    font-size: 2.5em;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.textArea::placeholder{
+    color: #0a3871;
+    font-family: "Mohave", sans-serif;
+    font-size: 1em;
+}
+
+.instruccion{
+    color: grey;
+    font-family: "Mohave", sans-serif;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
+.botones{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "Mohave", sans-serif;
+}
+
+.encriptar{
+    width: 95%;
+    padding: 4% 0;
+    background-color: #0a3871;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 45px;
+    border-color: #0a3871;
+    margin: 50px 0;
+}
+
+.desencriptar{
+    width: 95%;
+    padding: 4% 0;
+    background-color: #f3f5fc;
+    color: #0a3871;
+    font-size: 1.5em;
+    border-radius: 45px;
+    border-style: double;
+    border-color: #0a3871;
+    margin: 20px 0 50px 0;
+}
+
+.muneco{
+    display: none;
+}
+
+.resultados{
+    max-width: 1400px;
+    height: auto;
+    min-height: 40%;
+    background-color: white;
+    padding: 50px;
+    margin: 0 30px 50px 30px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje{
+    color: #292929;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-family: "Mohave", sans-serif;
+    font-size: 2.5em;
+    width: auto;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+    max-height: 60%;
+    margin-top: 50px;
+}
+
+.instruccionDos{
+    color: black;
+    font-family: "Mohave", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.copiar{
+    width: 100%;
+    padding: 4% 0;
+    background-color: #f3f5fc;
+    color: #0a3871;
+    font-size: 1.5em;
+    border-radius: 45px;
+    border-style: double;
+    border-color: #0a3871;
+    margin: 20px 0 50px 0;
+    display: none;
+}
+
+@media (min-width:1000px) {
+
+    main{
+        display: inline-flex;
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo{
+        max-width: 2500px;
+        margin: auto;
+        padding: 30px;
+    }
+    
+    .logo img{
+        width: 3%;
+    }
+
+    .flex-izquierda{
+        display: inline-flex;
+        width: 60%;
+        height: 100%;
+    }
+
+    .flex-derecha{
+        display: flex;
+        width: 40%;
+        height: auto;
+        margin: -6em 0 0 0;
+        max-height: 680px;
+    }
+    
+    .principal{
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 0 0 25%;
+        width: 100%;
+    }
+
+    .textArea{
+        color: #0a3871;
+        background-color: #f3f5fc;
+        border: none;
+        outline: none;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 2em;
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+    
+    .textArea::placeholder{
+        color: #0a3871;
+        font-family: Arial;
+        font-size: 1em;
+    }
+
+    .botones{
+        margin: 50px 0;
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .encriptar{
+        width: 95%;
+        padding: 4% 0;
+        background-color: #0a3871;
+        color: white;
+        font-size: 1em;
+        border-radius: 45px;
+        border-color: #0a3871;
+        margin: 0px 20px;
+    }
+    
+    .desencriptar{
+        width: 95%;
+        padding: 4% 0;
+        background-color: #f3f5fc;
+        color: #0a3871;
+        font-size: 1em;
+        border-radius: 45px;
+        border-style: double;
+        border-color: #0a3871;
+        margin: 0px 20px;
+    }
+
+    .instruccion{
+        color: grey;
+        font-size: 1em;
+        margin-top: 50px;
+    }
+
+    .muneco{
+        margin: 0 auto 0 auto;
+        width: 90%;
+        display: block;
+    }
+
+    .resultados{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 60%;
+        min-width: 60%;
+        height: 83%;
+        min-height: auto;
+        max-height: 100%;
+        background-color: white;
+        padding: 9% 10% 5% 10%;
+        margin: 0 0 0 5em;
+        border-radius: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .mensaje{
+        min-height: 110px;
+        max-height: 350px;
+        height: auto;
+        margin-top: 0;
+    }
+    
+    .instruccionDos{
+        color: black;
+        font-family: Arial;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 20px 0 10px 0;
+    }
+
+    .copiar{
+        max-width: 1400px;
+        width: 100%;
+        font-family: "Mohave", sans-serif;
+        margin: 0;
+    }
+
+}
